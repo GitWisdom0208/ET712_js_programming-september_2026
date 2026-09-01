@@ -1,0 +1,5 @@
+Lab Part 1- Create repository
+1.what message appears after tunning git init?  
+Initialized empty Git repository in C:/Users/Student/Desktop/Lab0_Gitlab/.git/
+2.What hidden folder was created?   
+.git
