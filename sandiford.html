@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 2 Test</title>
+</head>
+<body>
+  <h1>Homework 2 Output</h1>
+  <p>Open the console (F12) if you want to see it there too.</p>
+  <pre id="output"></pre>
+
+  <!-- Copies console.log output onto the page. Must come BEFORE your script. -->
+  <script>
+    const out = document.getElementById("output");
+    const originalLog = console.log;
+
+    console.log = function (...args) {
+      originalLog.apply(console, args);
+      out.textContent += args.join(" ") + "\n";
+    };
+  </script>
+
+  <!-- Your homework file -->
+  <script src="Sandiford.Js"></script>
+</body>
+</html>
