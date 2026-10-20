@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classlab14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <section class="maincontainer">
+            <div class="gallerycontainer" aria-label="photo gallery">
+                <img class="gallaryimage" src="new york (1).jpg" alt="new york">
+                <img src="new york (2).jpg" alt="new york">
+                <img src="new york (3).jpg" alt="new york">
+                <img src="new york (4).jpg" alt="new york">
+            </div>
+
+            <button class="btnright" aria-label="Scroll right">&#276F;</button>
+            <button class="btnleft" aria-label="Scroll left">&#276E;</button>
+
+            <form id="myForm" novalidate>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <small class="passwordmsg">Password must be at least 8 characters long.</small>
+
+                <button type="submit" class="submitbtn">Login</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="msg" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
