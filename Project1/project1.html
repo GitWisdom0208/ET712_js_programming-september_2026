@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curiosity Corner</title>
+    <link rel="stylesheet" href="styleproject1.css" />
+    <link rel="stylesheet" href="project1responsive.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar" id="top">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <h1>Curiosity Corner</h1>
+        </div>
+
+        <nav class="topnav" aria-label="Main navigation">
+          <a href="#colors">🎨 Colors</a>
+          <a href="#animals">🐾 Animals</a>
+          <a href="#shapes">🔷 Shapes</a>
+          <a href="#numbers">🔢 Numbers</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="play-tips" aria-label="Learning tips">
+          <p class="slide active">🔊 Click with the mouse to listen to the word said out loud!</p>
+          <p class="slide">👆 Click any picture to see it BIG!</p>
+          <p class="slide">✨ Explore all four sections and learn something new!</p>
+          <div class="slide-buttons">
+            <button id="prevSlide" type="button" aria-label="Previous tip">⬅️</button>
+            <button id="nextSlide" type="button" aria-label="Next tip">➡️</button>
+          </div>
+        </div>
+
+        <section class="category" id="colors">
+          <h2>🎨 Colors</h2>
+          <div class="color-row" aria-label="Colors">
+            <button class="color-swatch red" type="button" data-label="Red"><span class="swatch"></span><span class="label">Red</span></button>
+            <button class="color-swatch blue" type="button" data-label="Blue"><span class="swatch"></span><span class="label">Blue</span></button>
+            <button class="color-swatch yellow" type="button" data-label="Yellow"><span class="swatch"></span><span class="label">Yellow</span></button>
+            <button class="color-swatch green" type="button" data-label="Green"><span class="swatch"></span><span class="label">Green</span></button>
+            <button class="color-swatch orange" type="button" data-label="Orange"><span class="swatch"></span><span class="label">Orange</span></button>
+            <button class="color-swatch purple" type="button" data-label="Purple"><span class="swatch"></span><span class="label">Purple</span></button>
+            <button class="color-swatch pink" type="button" data-label="Pink"><span class="swatch"></span><span class="label">Pink</span></button>
+            <button class="color-swatch brown" type="button" data-label="Brown"><span class="swatch"></span><span class="label">Brown</span></button>
+            <button class="color-swatch black" type="button" data-label="Black"><span class="swatch"></span><span class="label">Black</span></button>
+            <button class="color-swatch white" type="button" data-label="White"><span class="swatch"></span><span class="label">White</span></button>
+          </div>
+        </section>
+
+        <section class="category" id="animals">
+          <h2>🐾 Animals</h2>
+          <div class="chip-row">
+            <button class="chip" type="button" data-label="Dog"><span class="emoji">🐶</span>Dog</button>
+            <button class="chip" type="button" data-label="Cat"><span class="emoji">🐱</span>Cat</button>
+            <button class="chip" type="button" data-label="Cow"><span class="emoji">🐮</span>Cow</button>
+            <button class="chip" type="button" data-label="Lion"><span class="emoji">🦁</span>Lion</button>
+            <button class="chip" type="button" data-label="Duck"><span class="emoji">🦆</span>Duck</button>
+            <button class="chip" type="button" data-label="Fish"><span class="emoji">🐟</span>Fish</button>
+            <button class="chip" type="button" data-label="Frog"><span class="emoji">🐸</span>Frog</button>
+            <button class="chip" type="button" data-label="Monkey"><span class="emoji">🐵</span>Monkey</button>
+            <button class="chip" type="button" data-label="Elephant"><span class="emoji">🐘</span>Elephant</button>
+            <button class="chip" type="button" data-label="Rabbit"><span class="emoji">🐰</span>Rabbit</button>
+          </div>
+        </section>
+
+        <section class="category" id="shapes">
+          <h2>🔷 Shapes</h2>
+          <div class="shape-row">
+            <button class="shape-box" type="button" data-label="Circle"><svg viewBox="0 0 100 100" aria-label="Circle"><circle cx="50" cy="50" r="34" fill="#f3516c"/></svg><span>Circle</span></button>
+            <button class="shape-box" type="button" data-label="Square"><svg viewBox="0 0 100 100" aria-label="Square"><rect x="18" y="18" width="64" height="64" fill="#4b9af7"/></svg><span>Square</span></button>
+            <button class="shape-box" type="button" data-label="Triangle"><svg viewBox="0 0 100 100" aria-label="Triangle"><polygon points="50,8 90,88 10,88" fill="#f4d35e"/></svg><span>Triangle</span></button>
+            <button class="shape-box" type="button" data-label="Star"><svg viewBox="0 0 100 100" aria-label="Star"><polygon points="50,7 62,36 94,36 69,55 79,90 50,68 21,90 31,55 6,36 38,36" fill="#ffb347"/></svg><span>Star</span></button>
+            <button class="shape-box" type="button" data-label="Heart"><svg viewBox="0 0 100 100" aria-label="Heart"><path d="M50 80C18 60 10 35 20 22C30 10 46 12 50 24C54 12 70 10 80 22C90 35 82 60 50 80Z" fill="#ef5da8"/></svg><span>Heart</span></button>
+            <button class="shape-box" type="button" data-label="Diamond"><svg viewBox="0 0 100 100" aria-label="Diamond"><polygon points="50,8 90,50 50,92 10,50" fill="#9d67d8"/></svg><span>Diamond</span></button>
+            <button class="shape-box" type="button" data-label="Moon"><svg viewBox="0 0 100 100" aria-label="Moon"><path d="M68 15C80 20 90 31 90 47C90 72 71 90 46 90A38 38 0 0 1 46 14C53 14 60 15 68 15Z" fill="#f5d66a"/></svg><span>Moon</span></button>
+            <button class="shape-box" type="button" data-label="Oval"><svg viewBox="0 0 100 100" aria-label="Oval"><ellipse cx="50" cy="50" rx="34" ry="24" fill="#54b87d"/></svg><span>Oval</span></button>
+            <button class="shape-box" type="button" data-label="Rectangle"><svg viewBox="0 0 100 100" aria-label="Rectangle"><rect x="18" y="28" width="64" height="44" fill="#8d6e63"/></svg><span>Rectangle</span></button>
+            <button class="shape-box" type="button" data-label="Cross"><svg viewBox="0 0 100 100" aria-label="Cross"><path d="M38 8H62V38H92V62H62V92H38V62H8V38H38Z" fill="#e34b4b"/></svg><span>Cross</span></button>
+          </div>
+        </section>
+
+        <section class="category" id="numbers">
+          <h2>🔢 Numbers</h2>
+          <div class="number-row">
+            <button class="number-pill" type="button" data-label="One">1<span>One</span></button>
+            <button class="number-pill" type="button" data-label="Two">2<span>Two</span></button>
+            <button class="number-pill" type="button" data-label="Three">3<span>Three</span></button>
+            <button class="number-pill" type="button" data-label="Four">4<span>Four</span></button>
+            <button class="number-pill" type="button" data-label="Five">5<span>Five</span></button>
+            <button class="number-pill" type="button" data-label="Six">6<span>Six</span></button>
+            <button class="number-pill" type="button" data-label="Seven">7<span>Seven</span></button>
+            <button class="number-pill" type="button" data-label="Eight">8<span>Eight</span></button>
+            <button class="number-pill" type="button" data-label="Nine">9<span>Nine</span></button>
+            <button class="number-pill" type="button" data-label="Ten">10<span>Ten</span></button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-note">Keep learning, keep being curious! 📚</footer>
+    </div>
+
+    <!-- Modal popup (JS component) -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalWord" hidden>
+      <div class="modal-box">
+        <button class="modal-arrow prev-arrow" type="button" aria-label="Previous item">←</button>
+        <div class="modal-panel">
+          <button id="closeModal" class="modal-close" type="button" aria-label="Close">✖</button>
+          <div id="modalPic" class="modal-pic"></div>
+          <h3 id="modalWord"></h3>
+          <button id="speakBtn" class="say-btn" type="button">🔊 Say it!</button>
+        </div>
+        <button class="modal-arrow next-arrow" type="button" aria-label="Next item">→</button>
+      </div>
+    </div>
+
+    <!-- Go to top (JS component) -->
+    <button id="toTop" type="button" aria-label="Go to top" hidden>🚀</button>
+
+    <script>
+      const animalSoundMap = {
+        Dog: { type: 'square', notes: [430, 520], durations: [0.16, 0.22], delay: 0.08 },
+        Cat: { type: 'triangle', notes: [820, 620], durations: [0.12, 0.18], delay: 0.06 },
+        Cow: { type: 'sawtooth', notes: [170, 120], durations: [0.28, 0.22], delay: 0.1 },
+        Lion: { type: 'sawtooth', notes: [220, 180, 150], durations: [0.22, 0.18, 0.2], delay: 0.1 },
+        Duck: { type: 'square', notes: [760, 620], durations: [0.12, 0.12], delay: 0.04 },
+        Fish: { type: 'sine', notes: [600, 540], durations: [0.08, 0.08], delay: 0.05 },
+        Frog: { type: 'square', notes: [340, 290, 240], durations: [0.09, 0.09, 0.1], delay: 0.05 },
+        Monkey: { type: 'triangle', notes: [520, 380, 460], durations: [0.1, 0.09, 0.1], delay: 0.06 },
+        Elephant: { type: 'sine', notes: [90, 120], durations: [0.4, 0.34], delay: 0.12 },
+        Rabbit: { type: 'triangle', notes: [680, 720, 660], durations: [0.08, 0.08, 0.09], delay: 0.04 }
+      };
+
+      const numberMap = {
+        One: 1, Two: 2, Three: 3, Four: 4, Five: 5,
+        Six: 6, Seven: 7, Eight: 8, Nine: 9, Ten: 10
+      };
+
+      const fruitMap = {
+        One: '🍎',
+        Two: '🍌',
+        Three: '🍇',
+        Four: '🍊',
+        Five: '🍐',
+        Six: '🍓',
+        Seven: '🍉',
+        Eight: '🍑',
+        Nine: '🥝',
+        Ten: '🍒'
+      };
+
+      function playAnimalSound(label) {
+        const config = animalSoundMap[label];
+        if (!config || !window.AudioContext && !window.webkitAudioContext) return;
+
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        const context = new AudioContextClass();
+        const master = context.createGain();
+        master.gain.value = 0.08;
+        master.connect(context.destination);
+
+        config.notes.forEach((note, index) => {
+          const oscillator = context.createOscillator();
+          const gain = context.createGain();
+          const start = context.currentTime + index * config.delay;
+          const duration = config.durations[index] || 0.15;
+
+          oscillator.type = config.type;
+          oscillator.frequency.setValueAtTime(note, start);
+
+          gain.gain.setValueAtTime(0.0001, start);
+          gain.gain.linearRampToValueAtTime(0.18, start + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+          oscillator.connect(gain);
+          gain.connect(master);
+
+          oscillator.start(start);
+          oscillator.stop(start + duration + 0.04);
+        });
+
+        setTimeout(() => {
+          context.close();
+        }, 1200);
+      }
+
+      function speakWord(text) {
+        if (!('speechSynthesis' in window)) return;
+
+        const synth = window.speechSynthesis;
+        synth.cancel();
+        if (typeof synth.resume === 'function') {
+          synth.resume();
+        }
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.75;
+        utterance.pitch = 1.05;
+        utterance.volume = 1;
+        utterance.lang = 'en-US';
+
+        const voices = synth.getVoices();
+        const preferredVoice = voices.find((voice) =>
+          /female|woman|girl|samantha|zira|aria|victoria|susan|jenny/i.test(voice.name)
+        ) || voices.find((voice) => /en-us|en_us|english/i.test(voice.lang)) || voices[0];
+
+        if (preferredVoice) {
+          utterance.voice = preferredVoice;
+        }
+
+        synth.speak(utterance);
+      }
+
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = () => {
+          window.speechSynthesis.getVoices();
+        };
+      }
+
+      // ===== JS Component 1: Modal popup =====
+      const modal = document.getElementById('modal');
+      const modalPic = document.getElementById('modalPic');
+      const modalWord = document.getElementById('modalWord');
+      const modalArrowButtons = document.querySelectorAll('.modal-arrow');
+      const allLearningItems = {
+        color: Array.from(document.querySelectorAll('.color-swatch')),
+        animal: Array.from(document.querySelectorAll('.chip')),
+        shape: Array.from(document.querySelectorAll('.shape-box')),
+        number: Array.from(document.querySelectorAll('.number-pill'))
+      };
+      let modalState = { type: null, index: 0 };
+
+      function getItemType(item) {
+        if (item.classList.contains('color-swatch')) return 'color';
+        if (item.classList.contains('chip')) return 'animal';
+        if (item.classList.contains('shape-box')) return 'shape';
+        if (item.classList.contains('number-pill')) return 'number';
+        return null;
+      }
+
+      function renderModalContent(item, label) {
+        modalPic.innerHTML = '';
+
+        if (item.classList.contains('color-swatch')) {
+          const swatch = item.querySelector('.swatch');
+          const box = document.createElement('div');
+          box.className = 'modal-color';
+          box.style.background = getComputedStyle(swatch).backgroundColor;
+          modalPic.appendChild(box);
+        } else if (item.classList.contains('chip')) {
+          const big = document.createElement('div');
+          big.className = 'modal-emoji';
+          big.textContent = item.querySelector('.emoji').textContent;
+          modalPic.appendChild(big);
+        } else if (item.classList.contains('shape-box')) {
+          modalPic.appendChild(item.querySelector('svg').cloneNode(true));
+        } else if (item.classList.contains('number-pill')) {
+          const count = numberMap[label];
+          const big = document.createElement('div');
+          big.className = 'modal-number';
+          big.textContent = count;
+
+          const fruitRow = document.createElement('div');
+          fruitRow.className = 'modal-fruit-row';
+          const fruit = fruitMap[label] || '🍎';
+
+          for (let i = 0; i < count; i += 1) {
+            const fruitIcon = document.createElement('span');
+            fruitIcon.className = 'modal-fruit';
+            fruitIcon.textContent = fruit;
+            fruitRow.appendChild(fruitIcon);
+          }
+
+          modalPic.appendChild(big);
+          modalPic.appendChild(fruitRow);
+        }
+
+        modalWord.textContent = label;
+      }
+
+      function openModal(item, label) {
+        const type = getItemType(item);
+        const items = type ? allLearningItems[type] : [];
+        modalState = { type, index: items.indexOf(item) };
+        renderModalContent(item, label);
+        modal.hidden = false;
+      }
+
+      function showNextModalItem(direction) {
+        if (!modalState.type) return;
+
+        const items = allLearningItems[modalState.type];
+        if (!items || !items.length) return;
+
+        modalState.index = (modalState.index + direction + items.length) % items.length;
+        const nextItem = items[modalState.index];
+        const nextLabel = nextItem.dataset.label || nextItem.textContent.trim();
+
+        speakWord(nextLabel);
+        renderModalContent(nextItem, nextLabel);
+
+        if (animalSoundMap[nextLabel]) {
+          setTimeout(() => {
+            playAnimalSound(nextLabel);
+          }, 650);
+        }
+      }
+
+      function closeModal() {
+        modal.hidden = true;
+        modalState = { type: null, index: 0 };
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+
+      document.getElementById('closeModal').addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+        if (modal.hidden) return;
+        if (e.key === 'ArrowRight') showNextModalItem(1);
+        if (e.key === 'ArrowLeft') showNextModalItem(-1);
+      });
+
+      modalArrowButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const direction = button.classList.contains('next-arrow') ? 1 : -1;
+          showNextModalItem(direction);
+        });
+      });
+
+      document.getElementById('speakBtn').addEventListener('click', () => {
+        const label = modalWord.textContent;
+        speakWord(label);
+        if (animalSoundMap[label]) {
+          setTimeout(() => {
+            playAnimalSound(label);
+          }, 650);
+        }
+      });
+
+      // ===== JS Component 2 + 3: Speech and animal sounds on click =====
+      document.querySelectorAll('.color-swatch, .chip, .shape-box, .number-pill').forEach((item) => {
+        item.addEventListener('click', () => {
+          const label = item.dataset.label || item.textContent.trim();
+          speakWord(label);
+          openModal(item, label);
+
+          if (animalSoundMap[label]) {
+            setTimeout(() => {
+              playAnimalSound(label);
+            }, 650);
+          }
+        });
+      });
+
+      // ===== JS Component 4: Informational slides =====
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      document.getElementById('nextSlide').addEventListener('click', () => showSlide(currentSlide + 1));
+      document.getElementById('prevSlide').addEventListener('click', () => showSlide(currentSlide - 1));
+
+      // ===== JS Component 5: Go to Top button =====
+      const toTop = document.getElementById('toTop');
+
+      window.addEventListener('scroll', () => {
+        toTop.hidden = window.scrollY < 200;
+      });
+
+      toTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+  </body>
+</html>
